@@ -2706,7 +2706,7 @@
     (property "Value" "14MHz" (at 31.75 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Crystal:Crystal_HC18-U_Vertical" (at 31.75 134.62 0)
+    (property "Footprint" "Cobra_original:Crystal_HC18-U_Vertical" (at 31.75 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 31.75 134.62 0)
