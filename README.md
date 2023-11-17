@@ -3,6 +3,8 @@
 CoBra is a Z80 computer designed in 1986 at a research center in Brasov, Romania (ITCI).
 It was a two-in-one machine, it could be a ZX Spectrum compatible or a CP/M machine.
 
+![CoBra mainboard](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/images/mainboard_view.png?raw=true)
+
 In its official version, its specs are:
 - 3.5MHz Z80A CPU
 - 64KB ram, made up of 4 banks of 8x 4116 chips each
