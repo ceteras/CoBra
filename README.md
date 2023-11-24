@@ -27,6 +27,6 @@ You can find out a lot about this incredible machine on the website.
 Gerber files are also available there if you want to order your own boards.
 
 This repo is a "revival" approach, aiming to re-create the original computer in Kicad, adding only some minor tweaks.
-No gerbers were generated yet, still doing final checks.
+
 
 ![CoBra mainboard](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/images/main.png?raw=true)
