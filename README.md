@@ -27,7 +27,7 @@ Code can be copied from ROM for ZX Spectrum mode, and from the floppy interface 
 Tape interface can also be an option, which should be great for development.  
 
 After copying the code, it will switch the memory map to te desired architecture.  
-ROMs are disabled now and execution continues from the 84KB of RAM.  
+ROMs are disabled now and execution continues from the 64KB of RAM.  
 
 
 Many thanks to [cobrasov.com](https://cobrasov.com/CoBra%20Project/index.html), my main inspiration source in this endeavour.  
