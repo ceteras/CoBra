@@ -32,10 +32,10 @@ This repo is a "revival" approach, aiming to re-create the original computer in 
 Current status is work in progress, a first batch of 5 boards has been ordered for production and are on the way.  
 
 Links:
-- ![2 Layer PCB project](https://github.com/ceteras/CoBra/tree/main/mainboard/2layer) - a 4 layer version is in the works too
-- ![Schematic in pdf format](https://github.com/ceteras/CoBra/blob/main/main.pdf)
-- ![Gerber files](https://github.com/ceteras/CoBra/tree/main/mainboard/2layer/kicad/fabrication)
-- ![Interactive BOM](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/kicad/bom/ibom.html)
-- ![A PAL encoder with S-Video connector](https://github.com/ceteras/CoBra/tree/main/s-video) - a draft, not tested yet
+- [2 Layer PCB project](https://github.com/ceteras/CoBra/tree/main/mainboard/2layer) - a 4 layer version is in the works too
+- [Schematic in pdf format](https://github.com/ceteras/CoBra/blob/main/main.pdf)
+- [Gerber files](https://github.com/ceteras/CoBra/tree/main/mainboard/2layer/kicad/fabrication)
+- [Interactive BOM](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/kicad/bom/ibom.html)
+- [A PAL encoder with S-Video connector](https://github.com/ceteras/CoBra/tree/main/s-video) - a draft, not tested yet
 
 ![CoBra mainboard](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/images/main.png?raw=true)
