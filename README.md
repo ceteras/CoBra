@@ -17,16 +17,16 @@ In its official version, its specs are:
 - 8 bit parallel port, input only, signals hared with the joystick interface
 - extension port using a 3x32 pin DIN41612 connector
 
-It's a two-in-one machine, it can be either a ZX Spectrum compatible or a CP/M machine.
+It's a two-in-one machine, it can be either a ZX Spectrum compatible or a CP/M machine.  
 CoBra has three different memory maps: one for power-on, one for ZX Spectrum, and one for CP/M.  
 The memory configuration change is done in software, using the bit 7 of the R register.  
 
 On power-on, the memory map includes both ROMs, and RAM banks 0 and 1.  
 Cobra boots from the small 2K ROM, it can display on the screen and copy code to RAM.  
-Code can be copied from ROM for ZX Spectrum mode, and from the floppy interface for CP/M.
+Code can be copied from ROM for ZX Spectrum mode, and from the floppy interface for CP/M.  
 Tape interface can also be an option, which should be great for development.  
 
-After copying the code, it will switch the memory map to te desired architecture.
+After copying the code, it will switch the memory map to te desired architecture.  
 ROMs are disabled now and execution continues from the 84KB of RAM.  
 
 
