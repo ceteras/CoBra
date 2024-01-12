@@ -14,7 +14,7 @@ In its official version, its specs are:
 - i8272 floppy interface - on a daughter board (not included in the repo for now)
 - RS232 port (bit-banged)
 - joystick port
-- 8 bit parallel port, input only, signals hared with the joystick interface
+- 8 bit parallel port, input only, signals shared with the joystick interface
 - extension port using a 3x32 pin DIN41612 connector
 
 It's a two-in-one machine, it can be either a ZX Spectrum compatible or a CP/M machine.  
