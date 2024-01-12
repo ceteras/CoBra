@@ -35,7 +35,7 @@ You can find out a lot about this incredible machine on the website, including m
 Gerber files are also available there for these improved versions, all tested and working great!  
 
 This repo is a "revival" approach, aiming to re-create the original computer in Kicad, adding only some minor tweaks.  
-Current status is work in progress, a first batch of 5 boards has been ordered for testing and are on the way.  
+Current status is work in progress, a first batch of 5 boards has been ordered, one such board is partially populated and tested, shown at the bottom of the page. 
 
 
 Links:
@@ -45,4 +45,8 @@ Links:
 - [Interactive BOM](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/kicad/bom/ibom.html)
 - [A PAL encoder with S-Video connector](https://github.com/ceteras/CoBra/tree/main/s-video) - a draft, not tested yet
 
-![CoBra mainboard](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/images/main.png?raw=true)
+![CoBra mainboard](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/images/main.png?raw=true) 
+
+![Prototype](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/images/mainboard_20240106.jpg?raw=true) 
+
+
