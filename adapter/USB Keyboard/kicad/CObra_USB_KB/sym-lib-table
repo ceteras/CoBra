@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "mcu_kleeb")(type "KiCad")(uri "/Users/vasileceteras/Documents/git/CoBra/adapter/USB Keyboard/kicad/lib/mcu.kicad_sym")(options "")(descr ""))
+)
