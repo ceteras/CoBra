@@ -50,10 +50,6 @@
 // this 32bit value means all 6 pins set to "1", used with gpio_set_mask 
   int32_t mask_KR_HI = 63 << KR0_PIN;
 
-// #define symbol_keys 
-
-
-
 /*--------------------------------------------------------------------
  * KEYCODE to CoBra KB Conversion
  *  Expand to array of [256][3]
@@ -416,8 +412,6 @@
     { 7, 2, 0 }, /* 0xE6 Right Alt     - SS   KC15 KR1  */ \
     { 0, 0, 0 }, /* 0xE7 Right GUI       */ \
     { 0, 0, 0 }, /* 0xE8                 */ \
-
-
 
 #ifdef __cplusplus
  }

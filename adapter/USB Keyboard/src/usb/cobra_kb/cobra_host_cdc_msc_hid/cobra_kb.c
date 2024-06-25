@@ -40,7 +40,7 @@ extern int32_t kb_matrix[8];
 extern int32_t any_key;
 extern bool caps_lock;
 
-// void set_capslock_led();
+
 void cobra_kb_set(uint8_t , uint8_t, uint8_t);
 void cobra_kb_clear(uint8_t , uint8_t, uint8_t);
 
@@ -214,14 +214,7 @@ uint8_t row_bit = conv_table[keycode][1] + KR0_PIN - 1;
         case 4:
 
         break;
-    }
-
-    // if ( keycode == 0x2A ) // backspace 
-    // {   
-    //     cobra_kb_clear(0x27, 0); // 0 - zero
-    //     sleep_ms(100);
-    //     cobra_kb_clear(0, 0); // CS
-    // }             
+    }     
 
 }
 
@@ -232,7 +225,6 @@ void cobra_kb_process_report(hid_keyboard_report_t const *report, hid_keyboard_r
 
 
 void __no_inline_not_in_flash_func(cobra_kb_type)() {
-//void cobra_kb_type() {
     uint8_t key_column = (gpio_get_all() & 0xFF) ;
     switch (key_column)
     {

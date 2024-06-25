@@ -48,13 +48,6 @@ extern void cobra_kb_E_mode();
 static uint8_t keybd_dev_addr = 0xFF;
 static uint8_t keybd_instance;
 
-
-// Keyboard LED control
-// static uint8_t leds = 0;
-// static uint8_t prev_leds = 0xFF;
-
-//static uint8_t const keycode2ascii[128][2] =  { HID_KEYCODE_TO_ASCII };
-
 // Each HID instance can has multiple reports
 static struct
 {
@@ -65,17 +58,6 @@ static struct
 static void process_kbd_report(hid_keyboard_report_t const *report);
 static void process_mouse_report(hid_mouse_report_t const * report);
 static void process_generic_report(uint8_t dev_addr, uint8_t instance, uint8_t const* report, uint16_t len);
-
-// void set_capslock_led (bool capslock_on) {
-//     if (capslock_on)
-//     {
-//       leds |= KEYBOARD_LED_CAPSLOCK;
-//     }
-//     else
-//     {
-//       leds &= ~KEYBOARD_LED_CAPSLOCK;
-//     }
-// }
 
 // look up new key in previous keys
 static inline bool find_key_in_report(hid_keyboard_report_t const *report, uint8_t keycode)
@@ -91,15 +73,7 @@ static inline bool find_key_in_report(hid_keyboard_report_t const *report, uint8
 
 void hid_app_task(void)
 {
-  // // update keyboard leds
-  // if (keybd_dev_addr != 0xFF)
-  // { // only if keyboard attached
-  //   if (leds != prev_leds)
-  //   {
-  //     tuh_hid_set_report(keybd_dev_addr, keybd_instance, 0, HID_REPORT_TYPE_OUTPUT, &leds, sizeof(leds));
-  //     prev_leds = leds;
-  //   }
-  // }
+
 }
 
 //--------------------------------------------------------------------+
@@ -113,9 +87,6 @@ void hid_app_task(void)
 // therefore report_desc = NULL, desc_len = 0
 void tuh_hid_mount_cb(uint8_t dev_addr, uint8_t instance, uint8_t const* desc_report, uint16_t desc_len)
 {
-  //printf("HID device address = %d, instance = %d is mounted\r\n", dev_addr, instance);
-  
-
   // Interface protocol (hid_interface_protocol_enum_t)
   //const char* protocol_str[] = { "None", "Keyboard", "Mouse" };
   uint8_t const itf_protocol = tuh_hid_interface_protocol(dev_addr, instance);
@@ -154,12 +125,10 @@ void tuh_hid_report_received_cb(uint8_t dev_addr, uint8_t instance, uint8_t cons
   switch (itf_protocol)
   {
     case HID_ITF_PROTOCOL_KEYBOARD:
-      //TU_LOG2("HID receive boot keyboard report\r\n");
       process_kbd_report( (hid_keyboard_report_t const*) report );
     break;
 
     case HID_ITF_PROTOCOL_MOUSE:
-      TU_LOG2("HID receive boot mouse report\r\n");
       process_mouse_report( (hid_mouse_report_t const*) report );
     break;
 
@@ -223,11 +192,6 @@ static void process_kbd_report(hid_keyboard_report_t const *report)
 
   if (
       ( key_count == 0) // clear matrix if no keys are pressed
-/*      &&
-      !CSON
-      &&
-      !SSON
-*/
   )
     memcpy(kb_matrix, nokeys, sizeof nokeys);
 
