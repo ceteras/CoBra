@@ -12,8 +12,8 @@ Key mapping:
 - Backspace - CS + 0
 - Insert - CS + 1 (edit)
 - Application menu key - SS + X (pound)
-- all symbols on a US keyboard [{]};:'"\|,<.>/?!@#$%^&*()_-+= 
-  are mapped to their coreesponding CoBra key combinations
-  eg ")" - SS + 9, "~" - Extended mode + SS + A
+- all symbols on a US keyboard [{]};:'"\|,<.>/?!@#$%^&*()_-+=   
+  are mapped to their coreesponding CoBra key combinations  
+  eg ")" - SS + 9, "~" - Extended mode + SS + A  
  
   
