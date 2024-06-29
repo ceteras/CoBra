@@ -89,9 +89,6 @@ uint8_t find_alternate_keycode (uint8_t keycode, uint8_t keytype) {
             if (ss_keys[i][0] == keycode)
                 altkeycode = ss_keys[i][1];
         break;
-        case 4:
-
-        break;
     }
 
     return altkeycode;
@@ -131,21 +128,17 @@ uint8_t row_bit = conv_table[keycode][1] + KR0_PIN - 1;
         break;
         case 3:
             if ( is_shift_on(modifier) ) {
-                //cobra_kb_clear(0xE1, 0, 0); // turn CS off for type 3 (SS symbols)
                 altkeycode = find_alternate_keycode(keycode, 2); // ss_keys_shift
             }
             else {
                 altkeycode = find_alternate_keycode(keycode, 3); // ss_keys
             }
             cobra_kb_set(0xE2, 0, 0); //SS
-            //key_delay();
             cobra_kb_set(altkeycode, 0, 0);
         break;
         case 4:
             if ( modifier & (KEYBOARD_MODIFIER_LEFTSHIFT | KEYBOARD_MODIFIER_RIGHTSHIFT)) {
-//                cobra_kb_clear(0xE1, 0, 0); // turn CS off
                 altkeycode = find_alternate_keycode(keycode, 2); // ss_keys_shift
-//                cobra_kb_set(0xE2, 0, 0); //SS
             }
             else {
                 altkeycode = find_alternate_keycode(keycode, 3); // ss_keys
@@ -158,7 +151,6 @@ uint8_t row_bit = conv_table[keycode][1] + KR0_PIN - 1;
         break;
         case 5:
             if ( is_shift_on(modifier) ) {
-                //cobra_kb_clear(0xE1, 0, 0); // turn CS off
                 altkeycode = find_alternate_keycode(keycode, 2); // ss_keys_shift
                 cobra_kb_set(0xE2, 0, 0); //SS
             }
