@@ -35,8 +35,10 @@ You can find out a lot about this incredible machine on the website, including m
 Gerber files are also available there for these improved versions, all tested and working great!  
 
 This repo is a "revival" approach, aiming to re-create the original computer in Kicad, adding only some minor tweaks.  
-Current status is work in progress, a first batch of 5 boards has been ordered, one such board is partially populated and tested, shown at the bottom of the page. 
-
+Current status: 
+- the board is built (see bottom image), there were some pain points I should document here
+- a floppy interface was also built, works with a modified BASIC (gerbers are Ver.1.2 on "Floppy" IF section on [cobrasov.com](https://cobrasov.com/CoBra%20Project/index.html).
+- CP/M not possible to test yet, all versions I can get access to need a 80KB RAM upgrade.
 
 Links:
 - [2 Layer PCB project](https://github.com/ceteras/CoBra/tree/main/mainboard/2layer) - a 4 layer version is in the works too
@@ -44,6 +46,7 @@ Links:
 - [Gerber files](https://github.com/ceteras/CoBra/tree/main/mainboard/2layer/kicad/fabrication)
 - [Interactive BOM](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/kicad/bom/ibom.html)
 - [A PAL encoder with S-Video connector](https://github.com/ceteras/CoBra/tree/main/s-video) - a draft, not tested yet
+- [An USB keyboard adapter](https://github.com/ceteras/CoBra/tree/main/adapter/USB%20Keyboard) - this one is also not final, an experiment
 
 ![CoBra mainboard](https://github.com/ceteras/CoBra/blob/main/mainboard/2layer/images/main.png?raw=true) 
 

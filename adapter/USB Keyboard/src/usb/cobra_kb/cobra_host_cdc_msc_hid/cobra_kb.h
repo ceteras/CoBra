@@ -28,7 +28,53 @@
  extern "C" {
 #endif
 
+/*
+A0 = bA14 xor (bA13 and L06 and bA15)
+A1 = bA15 xor L06
+A2 = nPO
+A3 = not ((not bnMREQ) and bnRFSH)
+O0 = A0 or A1 or A2 or A3
+O4 = A0 or A1 or (not A2) or A3
+a = not (O0 and O4)
+b = not (bnRD and (not L06))
+nCS0 = not (a and b)
 
+
+
+
+
+NCS0=¬(
+	    ¬((bA14 ⊕ (bA13∧L06∧bA15)) ∨ (bA15⊕L06) ∨ nPO ∨ (bnMREQ ∨ ¬bnRFSH) ∧ (bA14⊕(bA13∧L06∧bA15))
+        ∨
+        (bA15⊕L06)
+        ∨
+        ¬nPO
+        ∨
+        (bnMREQ∨¬bnRFSH))
+        ∧(¬bnRD∨L06)
+      )
+nCS0=¬(
+        ¬(
+          (bA14⊕(bA13∧L06∧bA15))
+          ∨
+          (bA15⊕L06)
+          ∨
+          nPO
+          ∨
+          (bnMREQ∨¬bnRFSH)
+          ∧
+          (bA14⊕(bA13∧L06∧bA15))
+          ∨
+          (bA15⊕L06)
+          ∨
+          ¬nPO
+          ∨
+          (bnMREQ∨¬bnRFSH)
+        )
+        ∧
+        (¬bnRD∨L06)
+      )
+*/
 
 // Define pins
   static const uint KC08_PIN  = 0;
