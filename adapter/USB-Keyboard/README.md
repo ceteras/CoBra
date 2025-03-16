@@ -13,7 +13,7 @@ Outputs are pulled high to 5V on the CoBra mainboard, hence the schottky diodes,
 The keyboard input is an 8255 and its input voltage thresholds are safe for 3.3V logic (minimum 2V for input "1").
 
 
-![Adapter schematic](https://github.com/ceteras/CoBra/blob/main/adapter/USB%20Keyboard/images/schematic.png?raw=true)
+![Adapter schematic](https://github.com/ceteras/CoBra/blob/main/adapter/USB-Keyboard/images/schematic.png?raw=true)
 
 
 Key mapping:
