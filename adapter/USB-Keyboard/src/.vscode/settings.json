@@ -1,0 +1,8 @@
+{
+//    "cmake.buildDirectory": "${workspaceFolder}/build_cmake",
+//    "cmake.installPrefix": "${workspaceFolder}/build_cmake/install_cmake",
+    "cmake.generator": "Unix Makefiles",
+    "cmake.configureArgs": [
+      "-Wno-dev"
+    ]
+  }
